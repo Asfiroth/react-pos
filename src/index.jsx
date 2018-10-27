@@ -15,7 +15,7 @@ window.$ = window.jQuery = jquery;
 import "./scss/styles.scss";
 import "semantic-ui-css/semantic.min.css";
 
-require("./favicon.ico");
+//require("./favicon.ico");
 
 const store = configureStore();
 

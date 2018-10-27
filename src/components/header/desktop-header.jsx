@@ -3,8 +3,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import * as navigationActions from "../../actions/navigationActions";
-import routeData from "../../data/routing-data";
+import * as cartActions from "../../actions/cart-actions";
 
 class DesktoHeader extends Component {
   constructor() {
@@ -37,8 +36,8 @@ class DesktoHeader extends Component {
           onBottomPassed={this.showFixedMenu}
           onBottomPassedReverse={this.hideFixedMenu}
         >
-          <Container className="nav">
-
+          <Container  className="nav">
+            <span>this is a text for header</span>
           </Container>
         </Visibility>
       </Segment>
@@ -46,17 +45,4 @@ class DesktoHeader extends Component {
   }
 }
 
-const mapStateToProps = (state, ownProps) => {
-  return { activeItem: state.navigation.page };
-};
-
-const mapDispatchToProps = (dispatch, ownProps) => {
-  return {
-    actions: bindActionCreators(navigationActions, dispatch)
-  };
-};
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(DesktoHeader);
+export default DesktoHeader;

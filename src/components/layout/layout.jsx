@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import DesktopLayout from "./DesktopLayout";
-import MobileLayout from "./MobileLayout";
+import DesktopLayout from "./desktop-layout";
+import MobileLayout from "./mobile-layout";
 
 class Layout extends Component {
   constructor() {

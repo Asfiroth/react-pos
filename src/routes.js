@@ -21,8 +21,8 @@ class Router extends Component {
         <Layout>
           <Switch>
             <Route exact path={routes.home} component={Home} />
-            <Route path={routes.payment} component={About} />
-            <Route path={routes.checkout} component={Contact} />
+            <Route path={routes.checkout} component={About} />
+            <Route path={routes.payment} component={Contact} />
             <Route component={ErrorPage} />
           </Switch>
         </Layout>

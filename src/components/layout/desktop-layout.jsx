@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import Header from "../header/DesktopHeader";
-import Footer from "../footer/Footer";
+import Header from "../header/desktop-header";
 import PropTypes from "prop-types";
 import { Responsive, Segment } from "semantic-ui-react";
 

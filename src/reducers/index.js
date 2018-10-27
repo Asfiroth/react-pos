@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
-import navigation from "./navigationReducer";
+import cartReducer from "./cart-reducer";
 
-const rootReducer = combineReducers({ navigation });
+const rootReducer = combineReducers({ cartReducer });
 
 export default rootReducer;
