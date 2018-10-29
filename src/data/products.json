@@ -1,0 +1,1468 @@
+[
+  {
+     "display_name":"Whiteboard Pen",
+     "categ_id":[
+        9,
+        "All / Consumable"
+     ],
+     "standard_price":0.0,
+     "product_tmpl_id":[
+        57,
+        "[CONS_0001] Whiteboard Pen"
+     ],
+     "lst_price":1.2,
+     "taxes_id":[
+        1
+     ],
+     "id":62,
+     "description_sale":false,
+     "list_price":1.2,
+     "tracking":"none",
+     "to_weight":true,
+     "barcode":false,
+     "pos_categ_id":[
+        1,
+        "Miscellaneous"
+     ],
+     "description":false,
+     "default_code":"CONS_0001",
+     "uom_id":[
+        3,
+        "kg"
+     ]
+  },
+  {
+     "display_name":"Customizable Desk (Black, Aluminium)",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":500.0,
+     "product_tmpl_id":[
+        9,
+        "Customizable Desk"
+     ],
+     "lst_price":800.4,
+     "taxes_id":[
+
+     ],
+     "id":13,
+     "description_sale":"160x80cm, with large legs.",
+     "list_price":750.0,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        2,
+        "Desks"
+     ],
+     "description":false,
+     "default_code":"DESK0004",
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Customizable Desk (White, Custom)",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":0.0,
+     "product_tmpl_id":[
+        9,
+        "Customizable Desk"
+     ],
+     "lst_price":750.0,
+     "taxes_id":[
+
+     ],
+     "id":65,
+     "description_sale":"160x80cm, with large legs.",
+     "list_price":750.0,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        2,
+        "Desks"
+     ],
+     "description":false,
+     "default_code":"DESK0005",
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Customizable Desk (Black, Custom)",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":0.0,
+     "product_tmpl_id":[
+        9,
+        "Customizable Desk"
+     ],
+     "lst_price":750.0,
+     "taxes_id":[
+
+     ],
+     "id":66,
+     "description_sale":"160x80cm, with large legs.",
+     "list_price":750.0,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        2,
+        "Desks"
+     ],
+     "description":false,
+     "default_code":"DESK0006",
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Corner Desk Right Sit",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":600.0,
+     "product_tmpl_id":[
+        10,
+        "[E-COM06] Corner Desk Right Sit"
+     ],
+     "lst_price":147.0,
+     "taxes_id":[
+
+     ],
+     "id":14,
+     "description_sale":false,
+     "list_price":147.0,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        2,
+        "Desks"
+     ],
+     "description":false,
+     "default_code":"E-COM06",
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Large Cabinet",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":800.0,
+     "product_tmpl_id":[
+        11,
+        "[E-COM07] Large Cabinet"
+     ],
+     "lst_price":320.0,
+     "taxes_id":[
+
+     ],
+     "id":15,
+     "description_sale":false,
+     "list_price":320.0,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        1,
+        "Miscellaneous"
+     ],
+     "description":false,
+     "default_code":"E-COM07",
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Storage Box",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":70.0,
+     "product_tmpl_id":[
+        12,
+        "[E-COM08] Storage Box"
+     ],
+     "lst_price":79.0,
+     "taxes_id":[
+
+     ],
+     "id":16,
+     "description_sale":false,
+     "list_price":79.0,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        1,
+        "Miscellaneous"
+     ],
+     "description":false,
+     "default_code":"E-COM08",
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Large Desk",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":1299.0,
+     "product_tmpl_id":[
+        13,
+        "[E-COM09] Large Desk"
+     ],
+     "lst_price":1799.0,
+     "taxes_id":[
+
+     ],
+     "id":17,
+     "description_sale":false,
+     "list_price":1799.0,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        2,
+        "Desks"
+     ],
+     "description":false,
+     "default_code":"E-COM09",
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Pedal Bin",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":10.0,
+     "product_tmpl_id":[
+        14,
+        "[E-COM10] Pedal Bin"
+     ],
+     "lst_price":47.0,
+     "taxes_id":[
+
+     ],
+     "id":18,
+     "description_sale":false,
+     "list_price":47.0,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        1,
+        "Miscellaneous"
+     ],
+     "description":false,
+     "default_code":"E-COM10",
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Cabinet with Doors",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":12.5,
+     "product_tmpl_id":[
+        15,
+        "[E-COM11] Cabinet with Doors"
+     ],
+     "lst_price":14.0,
+     "taxes_id":[
+
+     ],
+     "id":19,
+     "description_sale":false,
+     "list_price":14.0,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        1,
+        "Miscellaneous"
+     ],
+     "description":false,
+     "default_code":"E-COM11",
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Conference Chair (Steel)",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":14.0,
+     "product_tmpl_id":[
+        16,
+        "Conference Chair"
+     ],
+     "lst_price":16.5,
+     "taxes_id":[
+
+     ],
+     "id":20,
+     "description_sale":false,
+     "list_price":16.5,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        3,
+        "Chairs"
+     ],
+     "description":false,
+     "default_code":"E-COM12",
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Conference Chair (Aluminium)",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":0.0,
+     "product_tmpl_id":[
+        16,
+        "Conference Chair"
+     ],
+     "lst_price":22.900000000000002,
+     "taxes_id":[
+
+     ],
+     "id":21,
+     "description_sale":false,
+     "list_price":16.5,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        3,
+        "Chairs"
+     ],
+     "description":false,
+     "default_code":"E-COM13",
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Desk Organizer",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":0.0,
+     "product_tmpl_id":[
+        50,
+        "[FURN_0001] Desk Organizer"
+     ],
+     "lst_price":5.1000000000000005,
+     "taxes_id":[
+
+     ],
+     "id":55,
+     "description_sale":false,
+     "list_price":5.1,
+     "tracking":"none",
+     "to_weight":true,
+     "barcode":"2300001000008",
+     "pos_categ_id":[
+        1,
+        "Miscellaneous"
+     ],
+     "description":false,
+     "default_code":"FURN_0001",
+     "uom_id":[
+        3,
+        "kg"
+     ]
+  },
+  {
+     "display_name":"Desk Pad",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":0.0,
+     "product_tmpl_id":[
+        53,
+        "[FURN_0002] Desk Pad"
+     ],
+     "lst_price":1.98,
+     "taxes_id":[
+        1
+     ],
+     "id":58,
+     "description_sale":false,
+     "list_price":1.98,
+     "tracking":"none",
+     "to_weight":true,
+     "barcode":false,
+     "pos_categ_id":[
+        1,
+        "Miscellaneous"
+     ],
+     "description":false,
+     "default_code":"FURN_0002",
+     "uom_id":[
+        3,
+        "kg"
+     ]
+  },
+  {
+     "display_name":"LED Lamp",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":0.0,
+     "product_tmpl_id":[
+        55,
+        "[FURN_0003] LED Lamp"
+     ],
+     "lst_price":0.9,
+     "taxes_id":[
+        1
+     ],
+     "id":60,
+     "description_sale":false,
+     "list_price":0.9,
+     "tracking":"none",
+     "to_weight":true,
+     "barcode":false,
+     "pos_categ_id":[
+        1,
+        "Miscellaneous"
+     ],
+     "description":false,
+     "default_code":"FURN_0003",
+     "uom_id":[
+        3,
+        "kg"
+     ]
+  },
+  {
+     "display_name":"Letter Tray",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":0.0,
+     "product_tmpl_id":[
+        49,
+        "[FURN_0004] Letter Tray"
+     ],
+     "lst_price":4.8,
+     "taxes_id":[
+        1
+     ],
+     "id":54,
+     "description_sale":false,
+     "list_price":4.8,
+     "tracking":"none",
+     "to_weight":true,
+     "barcode":false,
+     "pos_categ_id":[
+        1,
+        "Miscellaneous"
+     ],
+     "description":false,
+     "default_code":"FURN_0004",
+     "uom_id":[
+        3,
+        "kg"
+     ]
+  },
+  {
+     "display_name":"Magnetic Board",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":0.0,
+     "product_tmpl_id":[
+        51,
+        "[FURN_0005] Magnetic Board"
+     ],
+     "lst_price":1.98,
+     "taxes_id":[
+        1
+     ],
+     "id":56,
+     "description_sale":false,
+     "list_price":1.98,
+     "tracking":"none",
+     "to_weight":true,
+     "barcode":"2301000000006",
+     "pos_categ_id":[
+        1,
+        "Miscellaneous"
+     ],
+     "description":false,
+     "default_code":"FURN_0005",
+     "uom_id":[
+        3,
+        "kg"
+     ]
+  },
+  {
+     "display_name":"Monitor Stand",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":0.0,
+     "product_tmpl_id":[
+        52,
+        "[FURN_0006] Monitor Stand"
+     ],
+     "lst_price":3.19,
+     "taxes_id":[
+        1
+     ],
+     "id":57,
+     "description_sale":false,
+     "list_price":3.19,
+     "tracking":"none",
+     "to_weight":true,
+     "barcode":false,
+     "pos_categ_id":[
+        1,
+        "Miscellaneous"
+     ],
+     "description":false,
+     "default_code":"FURN_0006",
+     "uom_id":[
+        3,
+        "kg"
+     ]
+  },
+  {
+     "display_name":"Newspaper Rack",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":0.0,
+     "product_tmpl_id":[
+        56,
+        "[FURN_0007] Newspaper Rack"
+     ],
+     "lst_price":1.28,
+     "taxes_id":[
+        1
+     ],
+     "id":61,
+     "description_sale":false,
+     "list_price":1.28,
+     "tracking":"none",
+     "to_weight":true,
+     "barcode":"2100001000004",
+     "pos_categ_id":[
+        1,
+        "Miscellaneous"
+     ],
+     "description":false,
+     "default_code":"FURN_0007",
+     "uom_id":[
+        3,
+        "kg"
+     ]
+  },
+  {
+     "display_name":"Small Shelf",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":0.0,
+     "product_tmpl_id":[
+        48,
+        "[FURN_0008] Small Shelf"
+     ],
+     "lst_price":2.83,
+     "taxes_id":[
+
+     ],
+     "id":53,
+     "description_sale":false,
+     "list_price":2.83,
+     "tracking":"none",
+     "to_weight":true,
+     "barcode":false,
+     "pos_categ_id":[
+        1,
+        "Miscellaneous"
+     ],
+     "description":false,
+     "default_code":"FURN_0008",
+     "uom_id":[
+        3,
+        "kg"
+     ]
+  },
+  {
+     "display_name":"Wall Shelf Unit",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":0.0,
+     "product_tmpl_id":[
+        47,
+        "[FURN_0009] Wall Shelf Unit"
+     ],
+     "lst_price":1.98,
+     "taxes_id":[
+
+     ],
+     "id":52,
+     "description_sale":false,
+     "list_price":1.98,
+     "tracking":"none",
+     "to_weight":true,
+     "barcode":"2100002000003",
+     "pos_categ_id":[
+        1,
+        "Miscellaneous"
+     ],
+     "description":false,
+     "default_code":"FURN_0009",
+     "uom_id":[
+        3,
+        "kg"
+     ]
+  },
+  {
+     "display_name":"Customizable Desk (White, Steel)",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":500.0,
+     "product_tmpl_id":[
+        9,
+        "Customizable Desk"
+     ],
+     "lst_price":750.0,
+     "taxes_id":[
+
+     ],
+     "id":10,
+     "description_sale":"160x80cm, with large legs.",
+     "list_price":750.0,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        2,
+        "Desks"
+     ],
+     "description":false,
+     "default_code":"FURN_0096",
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Customizable Desk (Black, Steel)",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":500.0,
+     "product_tmpl_id":[
+        9,
+        "Customizable Desk"
+     ],
+     "lst_price":750.0,
+     "taxes_id":[
+
+     ],
+     "id":11,
+     "description_sale":"160x80cm, with large legs.",
+     "list_price":750.0,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        2,
+        "Desks"
+     ],
+     "description":false,
+     "default_code":"FURN_0097",
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Customizable Desk (White, Aluminium)",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":500.0,
+     "product_tmpl_id":[
+        9,
+        "Customizable Desk"
+     ],
+     "lst_price":800.4,
+     "taxes_id":[
+
+     ],
+     "id":12,
+     "description_sale":"160x80cm, with large legs.",
+     "list_price":750.0,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        2,
+        "Desks"
+     ],
+     "description":false,
+     "default_code":"FURN_0098",
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Office Chair Black",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":18.0,
+     "product_tmpl_id":[
+        17,
+        "[FURN_0269] Office Chair Black"
+     ],
+     "lst_price":12.5,
+     "taxes_id":[
+
+     ],
+     "id":22,
+     "description_sale":false,
+     "list_price":12.5,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        3,
+        "Chairs"
+     ],
+     "description":false,
+     "default_code":"FURN_0269",
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Individual Workplace",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":876.0,
+     "product_tmpl_id":[
+        22,
+        "[FURN_0789] Individual Workplace"
+     ],
+     "lst_price":885.0,
+     "taxes_id":[
+
+     ],
+     "id":27,
+     "description_sale":false,
+     "list_price":885.0,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        1,
+        "Miscellaneous"
+     ],
+     "description":false,
+     "default_code":"FURN_0789",
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Corner Desk Black",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":78.0,
+     "product_tmpl_id":[
+        18,
+        "[FURN_1118] Corner Desk Black"
+     ],
+     "lst_price":85.0,
+     "taxes_id":[
+
+     ],
+     "id":23,
+     "description_sale":false,
+     "list_price":85.0,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        2,
+        "Desks"
+     ],
+     "description":false,
+     "default_code":"FURN_1118",
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Acoustic Bloc Screens",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":2870.0,
+     "product_tmpl_id":[
+        23,
+        "[FURN_6666] Acoustic Bloc Screens"
+     ],
+     "lst_price":2950.0,
+     "taxes_id":[
+
+     ],
+     "id":28,
+     "description_sale":false,
+     "list_price":2950.0,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        1,
+        "Miscellaneous"
+     ],
+     "description":false,
+     "default_code":"FURN_6666",
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Large Meeting Table",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":45000.0,
+     "product_tmpl_id":[
+        26,
+        "[FURN_6741] Large Meeting Table"
+     ],
+     "lst_price":40000.0,
+     "taxes_id":[
+
+     ],
+     "id":31,
+     "description_sale":"raid 1, 512ECC ram",
+     "list_price":40000.0,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        1,
+        "Miscellaneous"
+     ],
+     "description":false,
+     "default_code":"FURN_6741",
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Office Chair",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":55.0,
+     "product_tmpl_id":[
+        5,
+        "[FURN_7777] Office Chair"
+     ],
+     "lst_price":70.0,
+     "taxes_id":[
+
+     ],
+     "id":5,
+     "description_sale":false,
+     "list_price":70.0,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        3,
+        "Chairs"
+     ],
+     "description":false,
+     "default_code":"FURN_7777",
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Desk Combination",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":300.0,
+     "product_tmpl_id":[
+        8,
+        "[FURN_7800] Desk Combination"
+     ],
+     "lst_price":450.0,
+     "taxes_id":[
+
+     ],
+     "id":8,
+     "description_sale":"Desk combination, black-brown: chair + desk + drawer.",
+     "list_price":450.0,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        2,
+        "Desks"
+     ],
+     "description":false,
+     "default_code":"FURN_7800",
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Desk Stand with Screen",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":2010.0,
+     "product_tmpl_id":[
+        21,
+        "[FURN_7888] Desk Stand with Screen"
+     ],
+     "lst_price":2100.0,
+     "taxes_id":[
+
+     ],
+     "id":26,
+     "description_sale":false,
+     "list_price":2100.0,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        1,
+        "Miscellaneous"
+     ],
+     "description":false,
+     "default_code":"FURN_7888",
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Four Person Desk",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":25000.0,
+     "product_tmpl_id":[
+        25,
+        "[FURN_8220] Four Person Desk"
+     ],
+     "lst_price":23500.0,
+     "taxes_id":[
+
+     ],
+     "id":30,
+     "description_sale":"Dvorak keyboard\nleft-handed mouse",
+     "list_price":23500.0,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        2,
+        "Desks"
+     ],
+     "description":false,
+     "default_code":"FURN_8220",
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Drawer",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":3300.0,
+     "product_tmpl_id":[
+        24,
+        "[FURN_8855] Drawer"
+     ],
+     "lst_price":3645.0,
+     "taxes_id":[
+
+     ],
+     "id":29,
+     "description_sale":false,
+     "list_price":3645.0,
+     "tracking":"lot",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        1,
+        "Miscellaneous"
+     ],
+     "description":"Drawer with two routing possiblities.",
+     "default_code":"FURN_8855",
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Office Lamp",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":35.0,
+     "product_tmpl_id":[
+        6,
+        "[FURN_8888] Office Lamp"
+     ],
+     "lst_price":40.0,
+     "taxes_id":[
+
+     ],
+     "id":6,
+     "description_sale":false,
+     "list_price":40.0,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        1,
+        "Miscellaneous"
+     ],
+     "description":false,
+     "default_code":"FURN_8888",
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Drawer Black",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":20.0,
+     "product_tmpl_id":[
+        19,
+        "[FURN_8900] Drawer Black"
+     ],
+     "lst_price":25.0,
+     "taxes_id":[
+
+     ],
+     "id":24,
+     "description_sale":false,
+     "list_price":25.0,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        1,
+        "Miscellaneous"
+     ],
+     "description":false,
+     "default_code":"FURN_8900",
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Three-Seat Sofa",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":65000.0,
+     "product_tmpl_id":[
+        27,
+        "[FURN_8999] Three-Seat Sofa"
+     ],
+     "lst_price":60000.0,
+     "taxes_id":[
+
+     ],
+     "id":32,
+     "description_sale":"raid 10, 2048ECC ram",
+     "list_price":60000.0,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        1,
+        "Miscellaneous"
+     ],
+     "description":false,
+     "default_code":"FURN_8999",
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Flipover",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":1700.0,
+     "product_tmpl_id":[
+        20,
+        "[FURN_9001] Flipover"
+     ],
+     "lst_price":1950.0,
+     "taxes_id":[
+
+     ],
+     "id":25,
+     "description_sale":false,
+     "list_price":1950.0,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        1,
+        "Miscellaneous"
+     ],
+     "description":false,
+     "default_code":"FURN_9001",
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Office Design Software",
+     "categ_id":[
+        7,
+        "All / Saleable / Software"
+     ],
+     "standard_price":235.0,
+     "product_tmpl_id":[
+        7,
+        "[FURN_9999] Office Design Software"
+     ],
+     "lst_price":280.0,
+     "taxes_id":[
+
+     ],
+     "id":7,
+     "description_sale":false,
+     "list_price":280.0,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        1,
+        "Miscellaneous"
+     ],
+     "description":false,
+     "default_code":"FURN_9999",
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Miscellaneous",
+     "categ_id":[
+        10,
+        "All / Saleable / PoS"
+     ],
+     "standard_price":13.0,
+     "product_tmpl_id":[
+        46,
+        "[MISC] Miscellaneous"
+     ],
+     "lst_price":18.0,
+     "taxes_id":[
+        1
+     ],
+     "id":51,
+     "description_sale":false,
+     "list_price":18.0,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":false,
+     "description":false,
+     "default_code":"MISC",
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Coca-Cola",
+     "categ_id":[
+        11,
+        "All / Saleable / PoS"
+     ],
+     "standard_price":0.0,
+     "product_tmpl_id":[
+        60,
+        "Coca-Cola"
+     ],
+     "lst_price":2.2,
+     "taxes_id":[
+        1
+     ],
+     "id":67,
+     "description_sale":false,
+     "list_price":2.2,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        4,
+        "Drinks"
+     ],
+     "description":false,
+     "default_code":false,
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Minute Maid",
+     "categ_id":[
+        11,
+        "All / Saleable / PoS"
+     ],
+     "standard_price":0.0,
+     "product_tmpl_id":[
+        62,
+        "Minute Maid"
+     ],
+     "lst_price":2.2,
+     "taxes_id":[
+        1
+     ],
+     "id":69,
+     "description_sale":false,
+     "list_price":2.2,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        4,
+        "Drinks"
+     ],
+     "description":false,
+     "default_code":false,
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Virtual Home Staging",
+     "categ_id":[
+        5,
+        "All / Saleable / Services"
+     ],
+     "standard_price":25.5,
+     "product_tmpl_id":[
+        4,
+        "Virtual Home Staging"
+     ],
+     "lst_price":38.25,
+     "taxes_id":[
+
+     ],
+     "id":4,
+     "description_sale":false,
+     "list_price":38.25,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        1,
+        "Miscellaneous"
+     ],
+     "description":false,
+     "default_code":false,
+     "uom_id":[
+        6,
+        "Hour(s)"
+     ]
+  },
+  {
+     "display_name":"Virtual Interior Design",
+     "categ_id":[
+        5,
+        "All / Saleable / Services"
+     ],
+     "standard_price":20.5,
+     "product_tmpl_id":[
+        3,
+        "Virtual Interior Design"
+     ],
+     "lst_price":30.75,
+     "taxes_id":[
+
+     ],
+     "id":3,
+     "description_sale":false,
+     "list_price":30.75,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        1,
+        "Miscellaneous"
+     ],
+     "description":false,
+     "default_code":false,
+     "uom_id":[
+        6,
+        "Hour(s)"
+     ]
+  },
+  {
+     "display_name":"Water",
+     "categ_id":[
+        11,
+        "All / Saleable / PoS"
+     ],
+     "standard_price":0.0,
+     "product_tmpl_id":[
+        61,
+        "Water"
+     ],
+     "lst_price":2.2,
+     "taxes_id":[
+        1
+     ],
+     "id":68,
+     "description_sale":false,
+     "list_price":2.2,
+     "tracking":"none",
+     "to_weight":false,
+     "barcode":false,
+     "pos_categ_id":[
+        4,
+        "Drinks"
+     ],
+     "description":false,
+     "default_code":false,
+     "uom_id":[
+        1,
+        "Unit(s)"
+     ]
+  },
+  {
+     "display_name":"Whiteboard",
+     "categ_id":[
+        8,
+        "All / Saleable / Office Furniture"
+     ],
+     "standard_price":0.0,
+     "product_tmpl_id":[
+        54,
+        "Whiteboard"
+     ],
+     "lst_price":1.7,
+     "taxes_id":[
+        1
+     ],
+     "id":59,
+     "description_sale":false,
+     "list_price":1.7,
+     "tracking":"none",
+     "to_weight":true,
+     "barcode":false,
+     "pos_categ_id":false,
+     "description":false,
+     "default_code":false,
+     "uom_id":[
+        3,
+        "kg"
+     ]
+  }
+]

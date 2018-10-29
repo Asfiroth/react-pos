@@ -12,7 +12,7 @@ class DesktopLayout extends Component {
     return (
       <Responsive minWidth={Responsive.onlyTablet.minWidth}>
         <Header />
-        {children}
+        {children} 
       </Responsive>
     );
   }
