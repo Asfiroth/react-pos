@@ -100,6 +100,10 @@ li{
           width: 30%;
         }
       }
+      .product-quantity, .product-discount{
+        display: inline-block;
+        width: 100%;
+      }
     }
     .actions-pad{
       display: table-row;

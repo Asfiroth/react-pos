@@ -13,7 +13,8 @@ import jquery from "jquery";
 window.$ = window.jQuery = jquery;
 
 import "./scss/styles.scss";
-import "semantic-ui-css/semantic.min.css";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 //require("./favicon.ico");
 

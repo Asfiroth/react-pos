@@ -1,4 +1,3 @@
-import { Menu, Image, Container, Visibility, Segment } from "semantic-ui-react";
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
@@ -30,17 +29,9 @@ class DesktoHeader extends Component {
     const { fixed } = this.state;
     let { activeItem } = this.props;
     return (
-      <Segment textAlign="center" vertical>
-        <Visibility
-          once={false}
-          onBottomPassed={this.showFixedMenu}
-          onBottomPassedReverse={this.hideFixedMenu}
-        >
-          <Container  className="nav">
-            <span>this is a text for header</span>
-          </Container>
-        </Visibility>
-      </Segment>
+      <div>
+        <span>this is a text for the header</span>
+      </div>
     );
   }
 }

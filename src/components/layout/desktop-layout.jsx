@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "../header/desktop-header";
 import PropTypes from "prop-types";
-import { Responsive, Segment } from "semantic-ui-react";
+import {Container} from "reactstrap";
 
 class DesktopLayout extends Component {
   constructor() {
@@ -10,10 +10,10 @@ class DesktopLayout extends Component {
   render() {
     const { children } = this.props;
     return (
-      <Responsive minWidth={Responsive.onlyTablet.minWidth}>
+      <Container>
         <Header />
-        {children} 
-      </Responsive>
+        {children}
+      </Container>
     );
   }
 }

@@ -1,6 +1,9 @@
 import React, { Component } from "react";
+import { NavLink } from 'react-router-dom';
 import Button from "./num-pad-btn";
 import products from "../../data/products.json";
+import ProductItem from "./product-item";
+import SelectedProductItem from "./selected-product-item";
 
 class CartPage extends Component {
 
@@ -11,6 +14,8 @@ class CartPage extends Component {
     this.selectProductToUpdate = this.selectProductToUpdate.bind(this);
     this.onButtonClicked = this.onButtonClicked.bind(this);
     this.onOptionClicked = this.onOptionClicked.bind(this);
+    this.onRemoveClicked = this.onRemoveClicked.bind(this);
+    this.onChangeSignClicked = this.onChangeSignClicked.bind(this);
   }
 
   onProductItemClicked(e, product){
@@ -18,12 +23,14 @@ class CartPage extends Component {
 
     const index = selectedProducts.findIndex(prod => prod.id == product.id);
 
-    if(index != -1){
+    if(index != -1) {
+
       selectedProducts[index].quantity++;
-    }else{
-      product.quantity = 1;
-      product.discount = 0;
-      selectedProducts.push(product);
+    } else {
+      let newProd = Object.assign({}, product);
+      newProd.quantity = 1;
+      newProd.discount = 0;
+      selectedProducts.push(newProd);
     }
 
     this.setState({selectedProducts: selectedProducts});
@@ -37,8 +44,8 @@ class CartPage extends Component {
       case "Qty":
         let qty = selectedProducts[selectedProduct].quantity;
         if(qty == 1) qty = value;
-        else qty = parseInt(`${qty}${value}`)
-
+        else qty = parseInt(`${qty}${value}`);
+        let prod = selectedProducts[selectedProduct];
         selectedProducts[selectedProduct].quantity = qty;
         break;
       case "Disc":
@@ -48,6 +55,10 @@ class CartPage extends Component {
         if(disc >100) disc = 100;
 
         selectedProducts[selectedProduct].discount = disc;
+        break;
+      case "Price":
+        let price = selectedProducts[selectedProduct].lst_price;
+
         break;
     }
     this.setState({selectedProducts: selectedProducts});
@@ -63,6 +74,18 @@ class CartPage extends Component {
     this.setState({selectedProduct: selectedProduct});
   }
 
+  onRemoveClicked(product){
+    let { selectedProducts, option, selectedProduct } = this.state;
+    selectedProducts.splice(selectedProduct)
+    this.setState({selectedProducts: selectedProducts});
+  }
+
+  onChangeSignClicked(){
+    let { selectedProducts, selectedProduct } = this.state;
+    selectedProducts[selectedProduct].lst_price *=-1;
+    this.setState({selectedProducts: selectedProducts});
+  }
+
   render(){
     let { selectedProducts, option } = this.state;
     return(
@@ -71,30 +94,16 @@ class CartPage extends Component {
         <ul className="cart-list">
           {
             selectedProducts.map(product => {
-              return (
-                <li key={product.id} onClick={(e) => this.selectProductToUpdate(e, product)}>
-                  <span className="prod product-name">{product.display_name}</span>
-                  <span className="prod product-price">{`S/ ${(product.lst_price * product.quantity).toFixed(2)}`}</span>
-                  <span className="product-quantity">
-                    <em>{product.quantity}</em>
-                    Unit(s) at {`S/ ${product.lst_price.toFixed(2)}`} / Unit(s)
-                  </span>
-                  {
-                    product.discount > 0 ? <span className="product-discount">With a {`${product.discount.toFixed(2)}%`} discount.</span> : ''
-                  }
-                </li>
-                );
+
+              return (<SelectedProductItem product={product} click={this.selectProductToUpdate} />);
             })
           }
-
-
-
         </ul>
         <div className="actions-pad">
           <div className="pad">
-            <a href="/receipt">
-              <Button text="Payment" size={4} type="input"></Button>
-            </a>
+            <NavLink to="/receipt">
+              <Button text="Payment" size={4} click={(e) => {}} type="input"></Button>
+            </NavLink>
             <div className="numpad">
               <Button text="1" size={1} click={this.onButtonClicked} type="input"></Button>
               <Button text="2" size={1} click={this.onButtonClicked} type="input"></Button>
@@ -111,24 +120,17 @@ class CartPage extends Component {
               <Button text="9" size={1} click={this.onButtonClicked} type="input"></Button>
               <Button text="Price" size={1} selected={option} click={this.onOptionClicked} type="mode"></Button>
 
-              <Button text="+/-" size={1} click={this.onButtonClicked} type="input"></Button>
+              <Button text="+/-" size={1} click={this.onChangeSignClicked} type="input"></Button>
               <Button text="0" size={1} click={this.onButtonClicked} type="input"></Button>
               <Button text="." size={1} click={this.onButtonClicked} type="input"></Button>
-              <Button text="<-" size={1} click={this.onButtonClicked} type="mode"></Button>
+              <Button text="<-" size={1} click={this.onRemoveClicked} type="mode"></Button>
             </div>
           </div>
         </div>
       </div>
       <div className="product-list">
         {products.map(product => {
-          let imgSrc = `https://demo2.odoo.com/web/image?model=product.product&field=image_medium&id=${product.id}`;
-          return  (<div className="product" onClick={(e) => this.onProductItemClicked(e, product)} key={product.id}>
-                    <div className="prod-img">
-                      <img src={imgSrc} />
-                    </div>
-                    <span className="name">{product.display_name}</span>
-                    <span className="price">{`S/ ${product.lst_price.toFixed(2)}`}</span>
-                  </div>)
+          return  (<ProductItem product={product} click={this.onProductItemClicked} key={product.id} />)
         })}
       </div>
     </div>
