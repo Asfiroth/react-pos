@@ -13,12 +13,13 @@ import jquery from "jquery";
 window.$ = window.jQuery = jquery;
 
 import "./scss/styles.scss";
-
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "./scss/app.scss";
 
 //require("./favicon.ico");
 
-const store = configureStore();
+let initState = {cartReducer: {products: [], selectedItem: 0}};
+
+const store = configureStore(initState, '');
 
 render(
   <AppContainer>

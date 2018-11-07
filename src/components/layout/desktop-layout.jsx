@@ -10,10 +10,10 @@ class DesktopLayout extends Component {
   render() {
     const { children } = this.props;
     return (
-      <Container>
+      <div>
         <Header />
         {children}
-      </Container>
+      </div>
     );
   }
 }

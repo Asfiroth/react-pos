@@ -1,15 +1,20 @@
 import React, { Component } from "react";
 import { NavLink } from 'react-router-dom';
 import Button from "./num-pad-btn";
-import products from "../../data/products.json";
+import list_products from "../../data/products.json";
 import ProductItem from "./product-item";
 import SelectedProductItem from "./selected-product-item";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import * as cartActions from "../../actions/cart-actions"
+import CurrencyFormat from 'react-currency-format';
+import {Container} from "reactstrap";
 
 class CartPage extends Component {
 
   constructor(){
     super();
-    this.state = { selectedProducts: [], option: 'Qty', selectedProduct: 0 };
+    this.state = { option: 'Qty' };
     this.onProductItemClicked = this.onProductItemClicked.bind(this);
     this.selectProductToUpdate = this.selectProductToUpdate.bind(this);
     this.onButtonClicked = this.onButtonClicked.bind(this);
@@ -18,124 +23,114 @@ class CartPage extends Component {
     this.onChangeSignClicked = this.onChangeSignClicked.bind(this);
   }
 
-  onProductItemClicked(e, product){
-    let { selectedProducts } = this.state;
-
-    const index = selectedProducts.findIndex(prod => prod.id == product.id);
-
-    if(index != -1) {
-
-      selectedProducts[index].quantity++;
-    } else {
-      let newProd = Object.assign({}, product);
-      newProd.quantity = 1;
-      newProd.discount = 0;
-      selectedProducts.push(newProd);
-    }
-
-    this.setState({selectedProducts: selectedProducts});
+  onChangeSignClicked(){
+    this.props.actions.changeProductSign(this.props.currentItem);
   }
 
-  onButtonClicked(n){
-    let { selectedProducts, option, selectedProduct } = this.state;
-    let value = parseInt(n);
+  onRemoveClicked(){
+    this.props.actions.removeProduct(this.props.currentItem);
+  }
 
-    switch(option){
-      case "Qty":
-        let qty = selectedProducts[selectedProduct].quantity;
-        if(qty == 1) qty = value;
-        else qty = parseInt(`${qty}${value}`);
-        let prod = selectedProducts[selectedProduct];
-        selectedProducts[selectedProduct].quantity = qty;
+  onButtonClicked(value){
+    const {actions, currentItem} = this.props;
+    const {option} = this.state;
+    switch(option.toUpperCase()){
+      case 'QTY':
+        actions.updateItemUnits({id: currentItem, units: value});
         break;
-      case "Disc":
-        let disc = selectedProducts[selectedProduct].discount;
-        disc = parseInt(`${disc}${value}`);
-
-        if(disc >100) disc = 100;
-
-        selectedProducts[selectedProduct].discount = disc;
+      case 'DISC':
+        actions.updateItemDiscount({id: currentItem, discount: value});
         break;
-      case "Price":
-        let price = selectedProducts[selectedProduct].lst_price;
-
+      case 'PRICE':
+        actions.updateItemPrice({id: currentItem, price: value});
         break;
     }
-    this.setState({selectedProducts: selectedProducts});
   }
 
   onOptionClicked(text){
     this.setState({option: text});
   }
 
-  selectProductToUpdate(e, product){
-    let { selectedProducts } = this.state;
-    const selectedProduct = selectedProducts.findIndex(prod => prod.id == product.id);
-    this.setState({selectedProduct: selectedProduct});
+  selectProductToUpdate(product){
+    this.props.actions.selectProductItem(product.id);
   }
 
-  onRemoveClicked(product){
-    let { selectedProducts, option, selectedProduct } = this.state;
-    selectedProducts.splice(selectedProduct)
-    this.setState({selectedProducts: selectedProducts});
-  }
-
-  onChangeSignClicked(){
-    let { selectedProducts, selectedProduct } = this.state;
-    selectedProducts[selectedProduct].lst_price *=-1;
-    this.setState({selectedProducts: selectedProducts});
+  onProductItemClicked(product){
+    this.props.actions.addToCart({id: product.id, name: product.display_name, price: product.lst_price });
   }
 
   render(){
-    let { selectedProducts, option } = this.state;
+    let { option } = this.state;
+    let { products } = this.props;
     return(
-    <div className="page-root">
-      <div className="product-prev">
-        <ul className="cart-list">
-          {
-            selectedProducts.map(product => {
+      <Container fluid={true}>
+        <div className="page-root">
+          <div className="product-prev">
+            <ul className="cart-list">
+              {
+                products.map(product => {
+                  return (<SelectedProductItem product={product} click={this.selectProductToUpdate} key={product.id} />);
+                })
+              }
+            </ul>
+            <div className="cart-totals">
+              <div></div>
+              <CurrencyFormat value={products.reduce((previous, current) => previous + current.price, 0)} displayType={'text'}
+                          thousandSeparator={true} prefix={'Total: S/'}
+                          decimalScale={2} fixedDecimalScale={true} />
+            </div>
+            <div className="actions-pad">
+              <div className="pad">
+                <NavLink to="/receipt">
+                  <Button text="Payment" size={4} click={(e) => { localStorage.setItem("prods", JSON.stringify(products))}} type="input"></Button>
+                </NavLink>
+                <div className="numpad">
+                  <Button text="1" size={1} click={this.onButtonClicked} type="input"></Button>
+                  <Button text="2" size={1} click={this.onButtonClicked} type="input"></Button>
+                  <Button text="3" size={1} click={this.onButtonClicked} type="input"></Button>
+                  <Button text="Qty" selected={option} size={1} click={this.onOptionClicked} type="mode"></Button>
 
-              return (<SelectedProductItem product={product} click={this.selectProductToUpdate} />);
-            })
-          }
-        </ul>
-        <div className="actions-pad">
-          <div className="pad">
-            <NavLink to="/receipt">
-              <Button text="Payment" size={4} click={(e) => {}} type="input"></Button>
-            </NavLink>
-            <div className="numpad">
-              <Button text="1" size={1} click={this.onButtonClicked} type="input"></Button>
-              <Button text="2" size={1} click={this.onButtonClicked} type="input"></Button>
-              <Button text="3" size={1} click={this.onButtonClicked} type="input"></Button>
-              <Button text="Qty" selected={option} size={1} click={this.onOptionClicked} type="mode"></Button>
+                  <Button text="4" size={1} click={this.onButtonClicked} type="input"></Button>
+                  <Button text="5" size={1} click={this.onButtonClicked} type="input"></Button>
+                  <Button text="6" size={1} click={this.onButtonClicked} type="input"></Button>
+                  <Button text="Disc" size={1} selected={option} click={this.onOptionClicked} type="mode"></Button>
 
-              <Button text="4" size={1} click={this.onButtonClicked} type="input"></Button>
-              <Button text="5" size={1} click={this.onButtonClicked} type="input"></Button>
-              <Button text="6" size={1} click={this.onButtonClicked} type="input"></Button>
-              <Button text="Disc" size={1} selected={option} click={this.onOptionClicked} type="mode"></Button>
+                  <Button text="7" size={1} click={this.onButtonClicked} type="input"></Button>
+                  <Button text="8" size={1} click={this.onButtonClicked} type="input"></Button>
+                  <Button text="9" size={1} click={this.onButtonClicked} type="input"></Button>
+                  <Button text="Price" size={1} selected={option} click={this.onOptionClicked} type="mode"></Button>
 
-              <Button text="7" size={1} click={this.onButtonClicked} type="input"></Button>
-              <Button text="8" size={1} click={this.onButtonClicked} type="input"></Button>
-              <Button text="9" size={1} click={this.onButtonClicked} type="input"></Button>
-              <Button text="Price" size={1} selected={option} click={this.onOptionClicked} type="mode"></Button>
-
-              <Button text="+/-" size={1} click={this.onChangeSignClicked} type="input"></Button>
-              <Button text="0" size={1} click={this.onButtonClicked} type="input"></Button>
-              <Button text="." size={1} click={this.onButtonClicked} type="input"></Button>
-              <Button text="<-" size={1} click={this.onRemoveClicked} type="mode"></Button>
+                  <Button text="+/-" size={1} click={this.onChangeSignClicked} type="input"></Button>
+                  <Button text="0" size={1} click={this.onButtonClicked} type="input"></Button>
+                  <Button text="." size={1} click={this.onButtonClicked} type="input"></Button>
+                  <Button text="<-" size={1} click={this.onRemoveClicked} type="mode"></Button>
+                </div>
+              </div>
             </div>
           </div>
+          <div className="product-list">
+            {list_products.map(product => {
+              return  (<ProductItem product={product} click={this.onProductItemClicked} key={product.id} />)
+            })}
+          </div>
         </div>
-      </div>
-      <div className="product-list">
-        {products.map(product => {
-          return  (<ProductItem product={product} click={this.onProductItemClicked} key={product.id} />)
-        })}
-      </div>
-    </div>
+      </Container>
     )
   }
 }
 
-export default CartPage;
+const mapStateToProps = (state, ownProps) => {
+  return { products: state.cartReducer.products,
+           currentItem: state.cartReducer.selectedItem  };
+};
+
+const mapDispatchToProps = (dispatch, ownProps) => {
+  return {
+    actions: bindActionCreators(cartActions, dispatch)
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(CartPage);

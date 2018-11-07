@@ -1,5 +1,21 @@
+@import "bootstrap";
+
 li{
   list-style: none;
+}
+
+body{
+  overflow-y: hidden;
+}
+
+.header{
+  background-color: rgba(44, 48, 59, 0.8);
+  img{
+    max-width: 124px;
+    vertical-align: middle;
+    margin: 1rem 0;
+    height: 100%;
+  }
 }
 
 .page-root {
@@ -34,11 +50,11 @@ li{
     }
   }
 
-
-
   .product-list{
     display: flex;
     flex-flow: row wrap;
+    height: 100vh;
+    overflow-y: scroll;
 
     .product{
       display: flex;
@@ -74,13 +90,13 @@ li{
 
   .product-prev{
     height: 100%;
-    display: table;
     .cart-list{
       font-size: 16px;
       text-align: left;
       padding: 10;
-      display: table-row;
-
+      height: 60vh;
+      max-height: 60vh;
+      overflow-y: scroll;
       li{
         color: #888;
         cursor: pointer;
@@ -105,8 +121,22 @@ li{
         width: 100%;
       }
     }
+
+    .cart-totals{
+      color: black;
+      text-align: right;
+      font-weight: bold;
+      font-size: 1.5rem;
+      padding: 10px;
+      div{
+        height: 2px;
+        background-color: black;
+      }
+      span{
+
+      }
+    }
     .actions-pad{
-      display: table-row;
       .pad {
         display: flex;
         flex-flow: row;
@@ -124,8 +154,16 @@ li{
 
 }
 
+.receipt{
+  display: flex;
+  flex-direction: row;
 
-
-
-
+  .totals{
+    background-color: green;
+    width: 400px;
+    height: 100px;
+    font-size: 80px;
+    color:white;
+  }
+}
 
