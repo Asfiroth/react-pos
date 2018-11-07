@@ -21,16 +21,16 @@ class SelectedProductItem extends Component{
                       className="prod product-price" />
 
         <span className="product-quantity">
-          <em>{product.units}</em> Unit(s) at{' '}
+          <em>{product.units}</em>
           <CurrencyFormat value={product.price} displayType={'text'}
-                      thousandSeparator={true} prefix={'S/'}
-                      decimalScale={2} fixedDecimalScale={true} />{' '}/ Unit(s)
+                      thousandSeparator={true} prefix={' Unidad(es) a S/ '}
+                      decimalScale={2} fixedDecimalScale={true} suffix={' por unidad'} />
         </span>
         {
-          product.discount > 0 ? <span className="product-discount">With a{' '}
+          product.discount > 0 ? <span className="product-discount">
             <CurrencyFormat value={product.discount} displayType={'text'}
-                      thousandSeparator={true} suffix={'%'}
-                      decimalScale={2} fixedDecimalScale={true} />{' '} discount.</span> : ''
+                      thousandSeparator={true} suffix={'% de descuento'} prefix={'Con un '}
+                      decimalScale={2} fixedDecimalScale={true} /></span> : ''
         }
       </li>);
   }

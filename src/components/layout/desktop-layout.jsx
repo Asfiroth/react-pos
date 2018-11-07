@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "../header/desktop-header";
 import PropTypes from "prop-types";
-import {Container} from "reactstrap";
+
 
 class DesktopLayout extends Component {
   constructor() {

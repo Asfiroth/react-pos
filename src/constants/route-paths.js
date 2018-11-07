@@ -1,3 +1,3 @@
 export const home = "/";
 export const payment = "/pagar";
-export const checkout = "/receipt";
+export const checkout = "/metodo-pago";

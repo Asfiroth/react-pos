@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import {
   CartPage,
   Checkout,
-  Contact,
+  PrintReceipt,
   ErrorPage,
   Layout
 } from "./components";
@@ -22,7 +22,7 @@ class Router extends Component {
           <Switch>
             <Route exact path={routes.home} component={CartPage} />
             <Route path={routes.checkout} component={Checkout} />
-            <Route path={routes.payment} component={Contact} />
+            <Route path={routes.payment} component={PrintReceipt} />
             <Route component={ErrorPage} />
           </Switch>
         </Layout>

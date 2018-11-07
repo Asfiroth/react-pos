@@ -9,6 +9,12 @@ import { bindActionCreators } from "redux";
 import * as cartActions from "../../actions/cart-actions"
 import CurrencyFormat from 'react-currency-format';
 import {Container} from "reactstrap";
+import * as routes from "../../constants/route-paths";
+
+const calculatePrice = (currentProduct) => {
+  const price = currentProduct.price * currentProduct.units;
+  return price - ((currentProduct.discount * price)/100);
+}
 
 class CartPage extends Component {
 
@@ -59,6 +65,8 @@ class CartPage extends Component {
     this.props.actions.addToCart({id: product.id, name: product.display_name, price: product.lst_price });
   }
 
+
+
   render(){
     let { option } = this.state;
     let { products } = this.props;
@@ -68,21 +76,26 @@ class CartPage extends Component {
           <div className="product-prev">
             <ul className="cart-list">
               {
+                products.length > 0 ?
                 products.map(product => {
                   return (<SelectedProductItem product={product} click={this.selectProductToUpdate} key={product.id} />);
                 })
+                :
+                <div className="no-items">
+                  <span>No hay items en el carrito</span>
+                </div>
               }
             </ul>
             <div className="cart-totals">
               <div></div>
-              <CurrencyFormat value={products.reduce((previous, current) => previous + current.price, 0)} displayType={'text'}
+              <CurrencyFormat value={products.reduce((previous, current) => previous + calculatePrice(current), 0)} displayType={'text'}
                           thousandSeparator={true} prefix={'Total: S/'}
                           decimalScale={2} fixedDecimalScale={true} />
             </div>
             <div className="actions-pad">
               <div className="pad">
-                <NavLink to="/receipt">
-                  <Button text="Payment" size={4} click={(e) => { localStorage.setItem("prods", JSON.stringify(products))}} type="input"></Button>
+                <NavLink to={routes.checkout}>
+                  <Button text="Pagar" size={4} click={(e) => { localStorage.setItem("prods", JSON.stringify(products)) }} type="input"></Button>
                 </NavLink>
                 <div className="numpad">
                   <Button text="1" size={1} click={this.onButtonClicked} type="input"></Button>
