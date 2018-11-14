@@ -15,8 +15,6 @@ window.$ = window.jQuery = jquery;
 import "./scss/styles.scss";
 import "./scss/app.scss";
 
-//require("./favicon.ico");
-
 let initState = {cartReducer: {products: [], selectedItem: 0}};
 
 const store = configureStore(initState, '');
